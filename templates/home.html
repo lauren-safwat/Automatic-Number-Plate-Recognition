@@ -1,0 +1,163 @@
+{% extends 'layout.html' %}
+{% block body %}
+<!-- Hero Section -->
+<section id="hero" class="hero d-flex align-items-center bg-light">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-center text-dark">
+                <h1 data-aos="fade-up">Automatic Number Plate Recognition
+                    <span class="text-primary"> ANPR </span></h1>
+                <p data-aos="fade-up" data-aos-delay="400" class="text-muted my-5 py-4">
+                    Automatic Number Plate Recognition software that works in all environments, optimized for eduacational purposes. it uses Tensorflow and EasyOCR.
+                </p>
+                <a class="btn btn-lg btn-primary w-50" href="/detect">
+                    Try it out !
+                </a>
+            </div>
+            <div class="col-md-6 hero-img mb-auto" data-aos="zoom-out" data-aos-delay="200">
+                <img src="/static/images/header2.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+
+
+
+<!-- How it Works Section -->
+<section id="how" class="bg-white py-5 how d-flex align-items-center">
+    <div class="container my-auto">
+        <h2 class="pt-3 header-color-custom text-center">How it Works 🤔</h2>
+        <p class="text-muted mb-5 text-center"> Models, technologies ,frameworks and services used
+            to make things work.</p>
+        <div class="row p-4 align-items-center">
+            <div class="col-md-4">
+            <img src="/static/images/car2.png" class="img-fluid how-img" />
+                <p class="how-text mt-4">Object Detection Using Tensorflow</p>
+                <p class="py-3 text-muted">
+                    TensorFlow object detection is a computer vision technique that detects,
+                    locates, and traces an object from an image or video
+                </p>
+                <a href="https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/"
+                    target="_blank">
+                    Learn More
+                </a>
+            </div>
+            <div class="col-md-4">
+                <img src="/static/images/plate2.png" class="img-fluid how-img" />
+                <p class="how-text mt-4">OCR using EasyOCR</p>
+                <p class="py-3 text-muted">
+                    EasyOCR, is a Python package that allows computer vision
+                    developers to effortlessly perform Optical Character Recognition
+                </p>
+                <a href="https://www.jaided.ai/easyocr/documentation/"
+                    target="_blank">
+                    Learn More
+                </a>
+            </div>
+            <div class="col-md-4">
+                <img src="/static/images/heroku.png" class="img-fluid how-img" />
+                <p class="how-text mt-4">Deploy Model on Heroku Using Flask</p>
+                <p class="py-3 text-muted">
+                    Integrating the ML model by pushing its code to a special Heroku-hosted remote 
+                    that's associated with flask app.
+                </p>
+                <a href="https://towardsdatascience.com/complete-guide-on-model-deployment-with-flask-and-heroku-98c87554a6b9"
+                    target="_blank">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Meet Us Section -->
+<section id="team" class="py-5 team d-flex align-items-center">
+    <div class="container my-auto">
+        <h2 class="pt-3 header-color-custom text-center">Meet Us 🤝</h2>
+        <p class="text-muted mb-5 text-center">Automatic Number Plate Recognition system is developed by..</p>
+
+        <div class="row  pt-5">
+            <div class="col-md-6">
+                <a href="https://www.linkedin.com/in/emadabdalghaffar/" target="_blank" class="text-decoration-none">
+                    <div class="card mb-3 data_card">
+                        <div class="row no-gutters">
+                            <div class="flex col-4 col-sm-3 p-4">
+                                <img class="h-100 w-100 rounded-circle object-cover" src="https://via.placeholder.com/500" alt="">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h6 class="card-title text-dark">Emad Abdalghafar</h6>
+                                    <p class="card-text">
+                                        <small class="text-muted">AI & ML Scholar at ITI, M.Sc Structural Optimization</small><br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.linkedin.com/in/omarmarie/" target="_blank" class="text-decoration-none">
+                    <div class="card mb-3 data_card">
+                        <div class="row no-gutters">
+                            <div class="flex col-4 col-sm-3 p-4">
+                                <img class="h-100 w-100 rounded-circle object-cover" src="https://via.placeholder.com/500" alt="">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h6 class="card-title text-dark">Omar Marie</h6>
+                                    <p class="card-text"><small class="text-muted">Data Scientist | Software Engineer
+                                    </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="https://www.linkedin.com/in/yasser-ashraf-5aa0b41b6/" target="_blank" class="text-decoration-none">
+                    <div class="card mb-3 data_card">
+                        <div class="row no-gutters">
+                            <div class="flex col-4 col-sm-3 p-4">
+                                <img class="h-100 w-100 rounded-circle object-cover" src="https://via.placeholder.com/500" alt="">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h6 class="card-title text-dark">Yasser Ashraf</h6>
+                                    <p class="card-text"><small class="text-muted">Machine Learning Engineer
+                                    </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.linkedin.com/in/lauren-safwat/" target="_blank" class="text-decoration-none">
+                    <div class="card mb-3 data_card">
+                        <div class="row no-gutters">
+                            <div class="flex col-4 col-sm-3 p-4">
+                                <img class="h-100 w-100 rounded-circle object-cover" src="https://via.placeholder.com/500" alt="">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h6 class="card-title text-dark">Lauren Safwat  </h6>
+                                    <p class="card-text"><small class="text-muted">Machine Learning Engineer
+                                    </small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock  %}

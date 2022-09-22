@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<section class="detect text-center">
+<div class="container mt-5">
+  <br />
+  <br />
+  <span class="head ">Upload Your Car Image Here!</span>
+  <br />
+  <br />
+
+  <div class="fileUpload blue-btn btn width100">
+    <form action="#", method="POST", enctype="multipart/form-data">
+        <span>Choose an image</span>
+        <input type="file" class="uploadlogo" name="image_name" required/>
+  </div>
+        <input type="submit" value="Upload" class="btn btn-primary">
+    </form>
+</div>
+
+
+<!-- Check if upload is true display image -->
+{% if upload %}
+
+    <div class="container mt-5">
+        <div class="row justify-content-between">
+            <div class="col img-gallery">
+                <img    class="rounded img-fluid w-100 img-detect shadow-sm" 
+                        src="/static/upload/{{uploaded_img}}" alt="">
+            </div>
+            <div class="col img-gallery">
+                <img    class="rounded img-fluid w-100 shadow-sm img-detect" 
+                        src="/static/predict/{{ uploaded_img }}" alt="">
+            </div>
+        </div>
+
+        <div class="row justify-content-between mt-5">
+            <div class="col text-left">
+                    <h1><b>Car Plate</b></h1>
+            </div>
+            <div class="col text-left">
+                    <h1><b>Plate Number</b></h1>
+            </div>
+        </div>
+        
+        {% for i in range(nBoxes) %}
+            <div class="row justify-content-between mt-5">
+                <div class="col img-gallery text-left">
+                        <img class="rounded img-fluid w-75 shadow-sm img-detect_2" 
+                                src="/static/roi/{{ img_paths[i] }}" alt="">
+                </div>
+
+                <div class="col text-left">
+                        <h1 class="gradient">{{ocr_text[i]}}</h1>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</section>
+{% endif %}
+
+
+{% endblock %}
